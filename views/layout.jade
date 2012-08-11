@@ -10,6 +10,7 @@ html
       }
     link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascript/bootstrap.js')
     // Le HTML5 shim, for IE6-8 support of HTML5 elements
     // [if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,4 +21,72 @@ html
     link(rel="apple-touch-icon-precomposed", sizes="114x114", href="../assets/ico/apple-touch-icon-114-precomposed.png")
     link(rel="apple-touch-icon-precomposed", sizes="72x72", href="../assets/ico/apple-touch-icon-72-precomposed.png")
   body
-    block content
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          .brand(href="#") SallyBuffalo.com
+          .btn-group.pull-right
+            a.btn.dropdown-toggle(data-toggle="dropdown", href="#")
+              i.icon-user
+              | Hello Sally
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href="#") Profile
+              li.divider
+              li
+                a(href="#") Sign Out
+          .nav-collapse
+            ul.nav
+              li
+                a(href="#") Home
+              li
+                a(href="#") Archive
+              li
+                a(href="#") About
+    .container-fluid
+      .row-fluid
+        .span3
+          .well.sidebar-nav
+            ul.nav.nav-list
+              li.nav-header Sidebar
+              li
+                a(href="#") Link
+              li.active
+                a(href="#") Link
+              li
+                a(href="#") Link
+              li.nav-header Sidebar
+              li
+                a(href="#") Link
+              li
+                a(href="#") Link
+              li
+                a(href="#") Link
+              li
+                a(href="#") Link
+              li
+                a(href="#") Link
+              li
+                a(href="#") Link
+              li.nav-header Sidebar
+              li
+                a(href="#") Link
+              li
+                a(href="#") Link
+              li
+                a(href="#") Link
+        .span9
+          block content
+          .hero-unit
+            h1 Hello Sally
+            p This is a template for a simple marketing or informational website. .
+              It includes a large callout called the hero unit and three supporting .
+              pieces of content. Use it as a starting point to create something more unique.
+            p 
+              a.btn.btn-primary.btn-large Some action &raquo;
+
