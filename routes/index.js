@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'sallybuffalo.com' });
+  res.render('index', { title: 'Home' });
 };
 
 /*
@@ -12,5 +12,13 @@ exports.index = function(req, res){
  */
 
 exports.about = function(req, res){
-  res.render('about', { title: 'sallybuffalo.com' });
+  res.render('about', { title: 'About' });
+};
+
+/*
+ * GET chat page.
+ */
+
+exports.chat = function(req, res){
+  res.render('chat', { title: 'Chat' });
 };
