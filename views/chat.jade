@@ -1,20 +1,30 @@
 extends layout
 
 block content
-  .hero-unit
-    h1 #{title}
-    p This is a template for a simple marketing or informational website. .
-      It includes a large callout called the hero unit and three supporting .
-      pieces of content. Use it as a starting point to create something more unique.
-  p.thumbnails
-    .thumbnail
-      h3 Label
-      p This is a caption
-      img(src="/images/chat/1-add-account.jpg", alt="Add account")
-    hr
-    .thumbnail
-      img(src="/images/chat/2-username.jpg", alt="Username")
-    hr
-    .thumbnail
-      img(src="/images/chat/3-server.jpg", alt="Server")
+  .hero-unit.span10.offset1
+    h1 Chat setup
+    p Follow the steps below to create a chat account.
+  .row-fluid
+    ul.thumbnails
+      li.span10.offset1
+        .thumbnail
+          h3 Create an account
+          p If this the first time you've installed Adium you'll want to dismiss the add 
+            account wizard and select "Add Account" and XMPP from the file menu.
+
+          img(src="/images/chat/1-add-account.jpg", alt="Add account")
+  .row-fluid
+    ul.thumbnails
+      li.span8.offset2
+        .thumbnail
+          h3 Label
+          p Choose your username and password
+          img(src="/images/chat/2-username.jpg", alt="Username")
+  .row-fluid
+    ul.thumbnails
+      li.span8.offset2
+        .thumbnail
+          h3 Server name
+          p Enter the server name
+          img(src="/images/chat/3-server.jpg", alt="Server")
 
